@@ -1,6 +1,6 @@
 dist: xenial
 sudo: false
-
+arch: s390x
 language: cpp
 
 cache: ccache
@@ -40,3 +40,7 @@ script:
   - make install
   - /tmp/icinga2/sbin/icinga2 --version
   - /tmp/icinga2/sbin/icinga2 daemon -C -DRunAsUser=$(id -u -n) -DRunAsGroup=$(id -g -n)
+  
+branches:
+  only:
+  - s390x-travis-test
