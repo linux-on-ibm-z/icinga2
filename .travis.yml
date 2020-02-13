@@ -12,7 +12,6 @@ addons:
         key_url: 'https://packages.icinga.com/icinga.key'
     packages
       - flex
-      - wget
       - libboost-all-dev
       - bison
       - libssl-dev
