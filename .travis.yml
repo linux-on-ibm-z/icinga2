@@ -10,7 +10,7 @@ addons:
     sources:
       - sourceline: 'deb http://packages.icinga.com/ubuntu icinga-xenial main'
         key_url: 'https://packages.icinga.com/icinga.key'
-    packages
+    packages:
       - flex
       - libboost-all-dev
       - bison
