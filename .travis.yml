@@ -1,6 +1,6 @@
 dist: xenial
 sudo: false
-
+arch: s390x
 language: cpp
 
 cache: ccache
