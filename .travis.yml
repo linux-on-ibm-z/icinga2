@@ -1,6 +1,6 @@
 dist: xenial
 sudo: false
-arch: s390x
+
 language: cpp
 
 cache: ccache
@@ -11,14 +11,13 @@ addons:
       - sourceline: 'deb http://packages.icinga.com/ubuntu icinga-xenial main'
         key_url: 'https://packages.icinga.com/icinga.key'
     packages:
+      - libboost1.67-icinga-all-dev
       - flex
-      - libboost-all-dev
       - bison
       - libssl-dev
       - libpq-dev
       - libmysqlclient-dev
       - libedit-dev
-      - wget
 before_script:
   - arch=$(uname -m)
   - mkdir build
