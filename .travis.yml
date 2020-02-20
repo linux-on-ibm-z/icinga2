@@ -11,13 +11,40 @@ addons:
       - sourceline: 'deb http://packages.icinga.com/ubuntu icinga-xenial main'
         key_url: 'https://packages.icinga.com/icinga.key'
     packages:
-      - libboost-all-dev
-      - flex
-      - bison
+      - vim
+      - git
+      - locales
+      - cmake
+      - make
+      - build-essential
       - libssl-dev
-      - libpq-dev
+      - libboost-all-dev
+      - bison
+      - flex
       - libmysqlclient-dev
+      - libpq-dev
+      - libyajl-dev
       - libedit-dev
+      - monitoring-plugins
+      - php-intl
+      - php-imagick
+      - mysql-server
+      - mysql-client
+      - libapache2-mod-php
+      - apache2
+      - php-fpm
+      - mailutils
+      - php-gd
+      - php-pgsql
+      - php-xml
+      - php-curl
+      - php-mysql
+      - php-ldap
+      - php-mockery
+      - php-mbstring
+      - phpunit
+      - php
+      - wget
 before_script:
   - arch=$(uname -m)
   - mkdir build
